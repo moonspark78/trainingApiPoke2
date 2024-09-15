@@ -1,10 +1,11 @@
 import logo from './logo.svg';
-import './App.css';
+import ApiPoke from "./components/ApiPoke"
+
 
 function App() {
   return (
     <div className="App">
-      
+      <ApiPoke/>
     </div>
   );
 }
