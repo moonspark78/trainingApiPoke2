@@ -1,0 +1,14 @@
+.fase{
+    text-align: center;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}  

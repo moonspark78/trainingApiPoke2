@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import "./ApiPoke.css"
 
 const ApiPoke = () => {
 
@@ -17,7 +18,7 @@ const ApiPoke = () => {
 
 
   return (
-    <div>
+    <div className='fase'>
         <h1>ApiPoke</h1>
         <div className='card'>
             {pokeData.map((poke, i) =>(
