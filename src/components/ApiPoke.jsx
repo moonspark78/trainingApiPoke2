@@ -19,6 +19,14 @@ const ApiPoke = () => {
   return (
     <div>
         <h1>ApiPoke</h1>
+        <div className='card'>
+            {pokeData.map((poke, i) =>(
+                <div key={i}>
+                    <img alt='image' src={poke.image}/>
+                    <p>{poke.name}</p>
+                </div>
+            ))}
+        </div>
     </div>
   )
 }
