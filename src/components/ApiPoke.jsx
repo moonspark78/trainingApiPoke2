@@ -4,7 +4,7 @@ import "./ApiPoke.css"
 const ApiPoke = () => {
 
     const [pokeData, setPokeData] = useState([])
-    useEffect(() =>{
+    /* useEffect(() =>{
         const fetchData = async () =>{
             const response = await fetch ("https://pokebuildapi.fr/api/v1/pokemon/limit/100");
             const data = await response.json();
@@ -13,6 +13,13 @@ const ApiPoke = () => {
             
         }
         fetchData();
+    },[]) */
+
+    useEffect(() => {
+        fetch ("https://pokebuildapi.fr/api/v1/pokemon/limit/100")
+            .then(response => response.json())
+            .then(data => setPokeData(data))
+            .catch(err => console.error(err))
     },[])
 
 
